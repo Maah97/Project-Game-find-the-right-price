@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geologica:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Varela+Round&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>The right price</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="title">
+        <h1>Welcome to the game !</h1>    
+    </header>
+    <section class="container">
+        <h2>The right price</h2>
+        <div class="instruction">
+            <div class="confirmation">
+                <p>Are you ready to play ?</p>
+                <button id="btn-confirmation" class="btn">Click here to begin</button>
+            </div>
+            <form id="formulaire" class="form">
+                <input id="prix" class="form-control" placeholder="Guess the price ! (between 0 and 2 000)" />
+                <button id="btn-submit" type="submit" class="btn btn-primary">Deviner</button>
+                <p class="text-danger">Vous devez rentrer un nombre.</p>
+                <p class="text-danger">Votre nombre ne doit pas dépasser 2000.</p>
+            </form>
+            <button id="btn-replay" class="btn">Click here to replay !</button>
+        </div> 
+        <div class="responses"></div> 
+    </section>
+    
+</body>
+<script src="index.js"></script>
+</html>
